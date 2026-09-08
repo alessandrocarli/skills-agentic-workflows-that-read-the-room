@@ -18,6 +18,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     draft: true
@@ -30,7 +31,7 @@ Maintain the practical GitHub Info page for Mona.
 
 1. Read `notes/mona-notes.md` before making any changes.
 2. Use the GitHub repository API tools to read repository guidance and reference files. Do not use terminal, CLI, or sandboxed commands for that repository reading.
-3. Use `web-fetch` to read both `https://github.blog/latest/` and `https://github.blog/changelog/`.
+3. Use `web-fetch` to read `https://github.blog/latest/`, `https://github.blog/changelog/`, and `https://awesome-copilot.github.com/workflows/`.
 4. Update `site/content/github-info.md` with concise, practical developer guidance based on useful recent items. Preserve the existing editorial angle and mention the source for every item taken from the GitHub Blog or GitHub Changelog.
 5. Use the `edit` tool to make the file change. Do not modify unrelated files.
 6. Use the `create-pull-request` safe output to open a draft pull request for Mona to review. Include a concise summary, the source URLs, and the validation performed in the pull request body. Never write directly to `main`.
